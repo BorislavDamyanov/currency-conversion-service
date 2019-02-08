@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 
-@FeignClient(name="zuul-server")
+@FeignClient(name="currency-exchange-service")
 @RibbonClient(name="currency-exchange-service")
 @Repository
 public interface CurrencyExchangeServiceProxy {
